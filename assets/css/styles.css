@@ -3,3 +3,82 @@
   margin-right: auto;
 }
 
+  body {
+            font-family: 'Cairo', sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .header-bg {
+            background: linear-gradient(135deg, rgba(0,123,255,0.9), rgba(106,0,194,0.8));
+        }
+        
+        .pwa-header {
+            position: relative;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        
+        .figure-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .figure-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* تعديلات للشاشات الصغيرة */
+        @media (max-width: 767.98px) {
+            .nav {
+                flex-direction: row !important;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-item {
+                margin: 0.25rem;
+            }
+            
+            .sticky-top {
+                position: relative;
+                z-index: 1;
+            }
+            
+            .display-4 {
+                font-size: calc(1.275rem + 1.5vw);
+            }
+            
+            .lead {
+                font-size: 1rem;
+            }
+            
+            .figure-container {
+                padding: 0 0.5rem;
+            }
+        }
+        
+        /* تعديلات عامة للتخلص من الشريط الأفقي */
+        .container-fluid {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+        
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+        
+        /* تعديلات للقائمة الجانبية */
+        .sticky-nav {
+            top: 1rem;
+        }
+        
+        .nav-link {
+            white-space: normal;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
