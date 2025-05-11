@@ -1,5 +1,13 @@
-.accordion-button::after {
+[dir="rtl"] .accordion-button::after {
   margin-left: 0;
   margin-right: auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+[dir="rtl"] .row {
+  margin-right: 0;
+  margin-left: 0;
+}
